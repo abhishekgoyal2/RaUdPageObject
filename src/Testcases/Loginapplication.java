@@ -1,6 +1,7 @@
 package Testcases;
 
 import objectRepository.RediffHomepage;
+import objectRepository.RediffHomepagePagefactory;
 import objectRepository.RediffLoginpage;
 
 import org.openqa.selenium.WebDriver;
@@ -21,10 +22,15 @@ public void Login() throws InterruptedException
 //	rd.Loginbutton().click();
 	rd.HomeLink().click();
 	
-	RediffHomepage rh=new RediffHomepage(driver);
-	rh.searchfinder().sendKeys("mobile");
+//	RediffHomepage rh=new RediffHomepage(driver);
+//	rh.searchfinder().sendKeys("mobile");
+//Thread.sleep(400);
+//	rh.submitsearch().click();
+	
+	RediffHomepagePagefactory rhpf=new RediffHomepagePagefactory(driver);
+	rhpf.searchfinder().sendKeys("mobile");
 Thread.sleep(400);
-	rh.submitsearch().click();
+rhpf.submitsearch().click();
 }
 	
 }

@@ -24,12 +24,12 @@ public	RediffHomepagePagefactory(WebDriver driver)
 	
 	
 	
-	public WebElement emailid()
+	public WebElement searchfinder()
 	{
 		return searchbox;
 	}
 	
-	public WebElement pasword()
+	public WebElement submitsearch()
 	{
 		return Searchbutton;
 	}
