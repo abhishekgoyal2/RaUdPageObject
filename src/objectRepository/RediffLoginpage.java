@@ -15,6 +15,7 @@ public	RediffLoginpage(WebDriver driver)
 	By username =By.xpath(".//*[@id='login1']");
 	By password =By.xpath(".//*[@id='password']");
 	By go= By.name("proceed");
+	By homelinktext=By.linkText("Home");
 	
 	public WebElement emailid()
 	{
@@ -29,5 +30,10 @@ public	RediffLoginpage(WebDriver driver)
 	public WebElement Loginbutton()
 	{
 		return driver.findElement(go);
+	}
+	
+	public WebElement HomeLink()
+	{
+		return driver.findElement(homelinktext);
 	}
 }
